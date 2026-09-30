@@ -1,44 +1,337 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
+
     <meta charset="utf-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+
+    <title>The DOUGlassonian</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-sRIlkxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous">
+
+    <!-- My CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- 
+     ENTIRE WEBSITE
+ -->
+
+<div class="container-fluid">
+
+
+    <!-- 
+         HEADER
+     -->
+
+    <div class="row header">
+
+
+        <!-- LEFT SIDE: SOCIAL MEDIA + DATE
+             Bootstrap columns 1-2
+        -->
+
+        <div class="col-2">
+
+            <div class="socials">
+
+                f &nbsp;&nbsp; ◎ &nbsp;&nbsp; X &nbsp;&nbsp; in &nbsp;&nbsp; ✉
+
+            </div>
+
+
+            <div class="date">
+
+                Mon. Sept. 28, 2026
+
+            </div>
+
+        </div>
+
+
+
+        <!-- CENTER: NEWSPAPER NAME
+             Bootstrap columns 3-10
+        -->
+
+        <div class="col-8 newspaper-title" style="font-family: 'Times New Roman', Times, serif; font-size: 3rem; text-align: center;">
+
+            The DOUGlassonian
+
+        </div>
+
+
+
+        <!-- RIGHT SIDE: SEARCH
+             Bootstrap columns 11-12
+        -->
+
+        <div class="col-2 search">
+
+            <input 
+                type="text" 
+                placeholder="Enter Search Term"
+            >
+
+        </div>
+
+<div class="row">
+
+    <div class="col-3" style="background-color: rgb(11, 11, 11); color: white; font-family: 'Times New Roman', Times, serif;">
+    NEWS
+    </div>
+
+    <div class="col-3" style="background-color: rgb(11, 11, 11); color: white; font-family: 'Times New Roman', Times, serif;">
+        FEATURES
+    </div>
+
+    <div class="col-3" style="background-color: rgb(11, 11, 11); color: white; font-family: 'Times New Roman', Times, serif;">
+        PERSPECTIVES
+    </div>
+    <div class="col-3" style="background-color: rgb(11, 11, 11); color: white; font-family: 'Times New Roman', Times, serif;">
+        ABOUT
+    </div>
+
+</div>
+
+    <!-- 
+         MAIN CONTENT
+         
+         12 Bootstrap columns total:
+         
+         col-2 = LEFT
+         col-6 = CENTER
+         col-4 = RIGHT
+         
+         2 + 6 + 4 = 12
+     -->
+
+    <div class="row main-content">
+
+
+        <!-- 
+             LEFT SIDEBAR
+             Bootstrap columns 1-2
+         -->
+
+        <div class="col-2 left-sidebar">
+
+
+            <!-- STORY 1 -->
+
+            <div class="story" style="font-family: 'Times New Roman', Times, serif;">
+
+                <h3>
+                    INSIDE: Middle Aged and Living on Campus
+                </h3>
+
+            </div>
+
+
+------
+            <!-- STORY 2 -->
+
+            <div class="story"style="font-family: 'Times New Roman', Times, serif;">
+
+                <h3>
+                   Leaders are Readers: Dougs Book Recs
+                </h3>
+
+            </div>
+
+------
+
+            <!-- STORY 3 -->
+
+            <div class="story"style="font-family: 'Times New Roman', Times, serif;">
+
+                <h3>
+                    Hicks Hot Takes: Live Thursday
+                </h3>
+
+            </div>
+
+
+------
+            <!-- STORY 4 -->
+
+            <div class="story"style="font-family: 'Times New Roman', Times, serif;">
+
+                <h3>
+                    How Hicks Perfected His Tuition Raise Email
+                </h3>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- 
+             MAIN IMAGE
+             Bootstrap columns 3-8
+         -->
+
+        <div class="col-6 main-image">
+
+           <img 
+        src="images/doug-hicks.jpg" 
+        alt="Doug Hicks"
+        width="100%"
+        height="auto"
+    >
+
+        </div>
+
+
+        <!-- 
+             TRENDING STORIES
+             Bootstrap columns 9-12
+         -->
+
+        <div class="col-4 trending"style="font-family: 'Times New Roman', Times, serif;">
+
+
+            <!-- TRENDING TITLE -->
+
+            <h1>
+                Trending Stories
+            </h1>
+
+
+
+            <!-- 
+                 TRENDING STORY #1
+             -->
+
+            <div class="trending-story">
+
+
+
+                <!-- STORY TEXT -->
+
+                <div class="story-text">
+
+                    <h2>
+                        Doug Hicks Wins Doug Hicks Lookalike Contest
+                    </h2>
+
+                </div>
+
+
+
+                <!-- STORY IMAGE -->
+
+                <img 
+                    src="images/doug-lookalike.jpg"
+                    alt="Doug Hicks lookalike"
+                    width="50px"
+                    height="50px">
+
+
+            </div>
+
+
+
+            <!-- 
+                 TRENDING STORY #2
+             -->
+
+            <div class="trending-story">
+
+
+
+
+                <!-- STORY TEXT -->
+
+                <div class="story-text">
+
+                    <h2>
+                        Hicks Spotted With Curry
+                    </h2>
+
+                </div>
+
+
+
+                <!-- STORY IMAGE -->
+
+                <img 
+                    src="images/doug-curry.jpg"
+                    alt="Hicks with Curry"
+                    width="50px"
+                    height="50px" >
+
+
+            </div>
+
+
+
+            <!-- 
+                 TRENDING STORY #3
+             -->
+
+            <div class="trending-story">
+
+
+
+                <!-- STORY TEXT -->
+
+                <div class="story-text">
+
+                    <h2>
+                        "Back In My Day" With Hicks
+                    </h2>
+
+        
+
+
+                <img 
+                    src="images/doug-baseball.jpg"
+                    alt="Young Doug Hicks"
+                    width="50px"
+                    height="50px"
+                >
+
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+
+<!-- 
+     BOOTSTRAP JAVASCRIPT
+ -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-12">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Hello, world!</h1>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+  </body>
+</html>
 
-
-<div class="container">
-
-<div class="row">
-
-<div class="col">Col 1</div>
-<div class="col">Col 2</div>
-<div class="col">Col 3</div>
-
-</div>
-
-
-<div class="row">
-
-<div class="col-8">Col 8</div>
-<div class="col-4">Col 4</div>
-
-</div>
-
-<div class="row">
-
-<div class="col-12 col-md-8">col-12 col-md-8</div>
-<div class="col-12 col-md-4">col-12 col-md-4</div>
-
-</div>
-
-
-
-</div>
-
- </body>
 </html>
